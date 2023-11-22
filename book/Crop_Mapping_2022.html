@@ -212,55 +212,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/LiganiumInc/jb-demo/master?urlpath=tree/book/Crop_Mapping_2022.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/LiganiumInc/jb-demo/blob/master/book/Crop_Mapping_2022.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -286,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/LiganiumInc/jb-demo/edit/main/book/Crop_Mapping_2022.ipynb" target="_blank"
+      <li><a href="https://github.com/LiganiumInc/jb-demo/edit/main/book/Crop_Mapping_2022.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +284,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/book/Crop_Mapping_2022.ipynb" target="_blank"
+      <li><a href="../_sources/book/Crop_Mapping_2022.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -343,7 +294,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -425,7 +376,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blabla">blabla</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esa-wordcover">ESA WordCover</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-web-map-services">Using Web Map Services</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-earth-engine">Using Earth Engine</a></li>
@@ -469,31 +423,35 @@ document.write(`
 <ul class="simple">
 <li><p><a class="reference internal" href="#cropland-mapping-with-google-earth-engine-and-geemap" id="id3">Cropland mapping with Google Earth Engine and geemap</a></p>
 <ul>
-<li><p><a class="reference internal" href="#import-libraries" id="id4">Import libraries</a></p></li>
-<li><p><a class="reference internal" href="#esa-wordcover" id="id5">ESA WordCover</a></p>
+<li><p><a class="reference internal" href="#import-libraries" id="id4">Import libraries</a></p>
 <ul>
-<li><p><a class="reference internal" href="#using-web-map-services" id="id6">Using Web Map Services</a></p></li>
-<li><p><a class="reference internal" href="#using-earth-engine" id="id7">Using Earth Engine</a></p></li>
-<li><p><a class="reference internal" href="#creating-charts" id="id8">Creating charts</a></p></li>
-<li><p><a class="reference internal" href="#adding-administrative-boundaries" id="id9">Adding Administrative Boundaries</a></p></li>
-<li><p><a class="reference internal" href="#extracting-croplands" id="id10">Extracting Croplands</a></p></li>
-<li><p><a class="reference internal" href="#zonal-statistics" id="id11">Zonal Statistics</a></p></li>
+<li><p><a class="reference internal" href="#blabla" id="id5">blabla</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#esri-global-land-cover" id="id12">ESRI GLobal Land Cover</a></p>
+<li><p><a class="reference internal" href="#esa-wordcover" id="id6">ESA WordCover</a></p>
 <ul>
-<li><p><a class="reference internal" href="#using-awesome-gee-community-datasets" id="id13">Using Awesome GEE Community Datasets</a></p></li>
-<li><p><a class="reference internal" href="#using-timeseries-inspector" id="id14">Using Timeseries Inspector</a></p></li>
-<li><p><a class="reference internal" href="#id1" id="id15">Extracting Croplands</a></p></li>
-<li><p><a class="reference internal" href="#id2" id="id16">Zonal Statistics</a></p></li>
-<li><p><a class="reference internal" href="#analyzing-cropland-gain-and-loss" id="id17">Analyzing Cropland Gain and Loss</a></p></li>
+<li><p><a class="reference internal" href="#using-web-map-services" id="id7">Using Web Map Services</a></p></li>
+<li><p><a class="reference internal" href="#using-earth-engine" id="id8">Using Earth Engine</a></p></li>
+<li><p><a class="reference internal" href="#creating-charts" id="id9">Creating charts</a></p></li>
+<li><p><a class="reference internal" href="#adding-administrative-boundaries" id="id10">Adding Administrative Boundaries</a></p></li>
+<li><p><a class="reference internal" href="#extracting-croplands" id="id11">Extracting Croplands</a></p></li>
+<li><p><a class="reference internal" href="#zonal-statistics" id="id12">Zonal Statistics</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#dynamic-world-land-cover" id="id18">Dynamic World Land Cover</a></p>
+<li><p><a class="reference internal" href="#esri-global-land-cover" id="id13">ESRI GLobal Land Cover</a></p>
 <ul>
-<li><p><a class="reference internal" href="#classification-and-probability" id="id19">Classification and Probability</a></p></li>
-<li><p><a class="reference internal" href="#esa-land-cover-vs-dynamic-world" id="id20">ESA Land Cover vs. Dynamic World</a></p></li>
-<li><p><a class="reference internal" href="#esri-land-cover-vs-dynamic-world" id="id21">ESRI Land Cover vs. Dynamic World</a></p></li>
+<li><p><a class="reference internal" href="#using-awesome-gee-community-datasets" id="id14">Using Awesome GEE Community Datasets</a></p></li>
+<li><p><a class="reference internal" href="#using-timeseries-inspector" id="id15">Using Timeseries Inspector</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id16">Extracting Croplands</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id17">Zonal Statistics</a></p></li>
+<li><p><a class="reference internal" href="#analyzing-cropland-gain-and-loss" id="id18">Analyzing Cropland Gain and Loss</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#dynamic-world-land-cover" id="id19">Dynamic World Land Cover</a></p>
+<ul>
+<li><p><a class="reference internal" href="#classification-and-probability" id="id20">Classification and Probability</a></p></li>
+<li><p><a class="reference internal" href="#esa-land-cover-vs-dynamic-world" id="id21">ESA Land Cover vs. Dynamic World</a></p></li>
+<li><p><a class="reference internal" href="#esri-land-cover-vs-dynamic-world" id="id22">ESRI Land Cover vs. Dynamic World</a></p></li>
 </ul>
 </li>
 </ul>
@@ -501,6 +459,7 @@ document.write(`
 </ul>
 </nav>
 <p>Useful links</p>
+<p>This notebook is a collection of ……….</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://earthengine.google.com/">Google Earth Engine</a></p></li>
 <li><p><a class="reference external" href="https://earthengine.google.com/signup/">Sign up for an Earth Engine account</a></p></li>
@@ -509,26 +468,25 @@ document.write(`
 <li><p><a class="reference external" href="https://book.geemap.org/">Geemap book</a></p></li>
 <li><p><a class="reference external" href="https://youtube.com/&#64;giswqs">Geemap YouTube videos</a></p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># !pip install geemap</span>
 </pre></div>
 </div>
-</div>
-</div>
 <section id="import-libraries">
 <h2><a class="toc-backref" href="#id4" role="doc-backlink">Import libraries</a><a class="headerlink" href="#import-libraries" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ee</span>
 <span class="kn">import</span> <span class="nn">geemap</span>
 </pre></div>
 </div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
 </div>
-</div>
+<p>Test something new</p>
+<section id="blabla">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">blabla</a><a class="headerlink" href="#blabla" title="Permalink to this heading">#</a></h3>
+</section>
 </section>
 <section id="esa-wordcover">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">ESA WordCover</a><a class="headerlink" href="#esa-wordcover" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">ESA WordCover</a><a class="headerlink" href="#esa-wordcover" title="Permalink to this heading">#</a></h2>
 <p>The European Space Agency (ESA) WorldCover 10 m 2020 product provides a global land cover map for 2020 at 10 m resolution based on Sentinel-1 and Sentinel-2 data. The WorldCover product comes with 11 land cover classes and has been generated in the framework of the ESA WorldCover project, part of the 5th Earth Observation Envelope Programme (EOEP-5) of the European Space Agency.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://esa-worldcover.org/">ESA WorldCover website</a></p></li>
@@ -536,15 +494,13 @@ document.write(`
 <li><p><a class="reference external" href="https://esa-worldcover.org/en/data-access">User Manual and Validation Report</a></p></li>
 </ul>
 <section id="using-web-map-services">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Using Web Map Services</a><a class="headerlink" href="#using-web-map-services" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Using Web Map Services</a><a class="headerlink" href="#using-web-map-services" title="Permalink to this heading">#</a></h3>
 <p>The ESA WorldCover product can also be used within other websites or GIS clients by ‘Web Map Services’. These services provide a direct link to the cached images and are the best option if you simply want to map the data and produce cartographic products. They are not suitable for analysis as the data are represented only as RGB images.</p>
 <ul class="simple">
 <li><p>WMTS: <a class="reference external" href="https://services.terrascope.be/wmts/v2">https://services.terrascope.be/wmts/v2</a></p></li>
 <li><p>WMS: <a class="reference external" href="https://services.terrascope.be/wms/v2">https://services.terrascope.be/wms/v2</a></p></li>
 <li><p>Layers: WORLDCOVER_2020_MAP, WORLDCOVER_2020_S2_FCC, WORLDCOVER_2020_S2_TCC</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
 <span class="n">esa_wms</span> <span class="o">=</span> <span class="s1">&#39;https://services.terrascope.be/wms/v2&#39;</span>  <span class="c1"># The WMS URL</span>
@@ -560,16 +516,12 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="using-earth-engine">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Using Earth Engine</a><a class="headerlink" href="#using-earth-engine" title="Permalink to this heading">#</a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Using Earth Engine</a><a class="headerlink" href="#using-earth-engine" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100">EAS WroldCover in the Earth Engine Data Catalog</a></p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="s1">&#39;HYBRID&#39;</span><span class="p">)</span>
 
@@ -582,73 +534,41 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="creating-charts">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Creating charts</a><a class="headerlink" href="#creating-charts" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Creating charts</a><a class="headerlink" href="#creating-charts" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">histogram</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">image_histogram</span><span class="p">(</span>
     <span class="n">esa</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">x_label</span><span class="o">=</span><span class="s1">&#39;Land Cover Type&#39;</span><span class="p">,</span> <span class="n">y_label</span><span class="o">=</span><span class="s1">&#39;Area (km2)&#39;</span>
 <span class="p">)</span>
 <span class="n">histogram</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">image_histogram</span><span class="p">(</span><span class="n">esa</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">return_df</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">esa_labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">geemap</span><span class="o">.</span><span class="n">builtin_legends</span><span class="p">[</span><span class="s1">&#39;ESA_WorldCover&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 <span class="n">esa_labels</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">esa_labels</span>
 <span class="n">df</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="mf">1e6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">bar_chart</span><span class="p">(</span>
     <span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">x_label</span><span class="o">=</span><span class="s1">&#39;Land Cover Type&#39;</span><span class="p">,</span> <span class="n">y_label</span><span class="o">=</span><span class="s1">&#39;Area (km2)&#39;</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">pie_chart</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="adding-administrative-boundaries">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Adding Administrative Boundaries</a><a class="headerlink" href="#adding-administrative-boundaries" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Adding Administrative Boundaries</a><a class="headerlink" href="#adding-administrative-boundaries" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">geemap</span><span class="o">.</span><span class="n">examples</span><span class="o">.</span><span class="n">get_ee_path</span><span class="p">(</span><span class="s1">&#39;countries&#39;</span><span class="p">))</span>
 <span class="n">africa</span> <span class="o">=</span> <span class="n">countries</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Filter</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="s1">&#39;CONTINENT&#39;</span><span class="p">,</span> <span class="s1">&#39;Africa&#39;</span><span class="p">))</span>
 <span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;fillColor&#39;</span><span class="p">:</span> <span class="s1">&#39;00000000&#39;</span><span class="p">}</span>
@@ -658,60 +578,38 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="extracting-croplands">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Extracting Croplands</a><a class="headerlink" href="#extracting-croplands" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Extracting Croplands</a><a class="headerlink" href="#extracting-croplands" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cropland</span> <span class="o">=</span> <span class="n">esa</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">clipToCollection</span><span class="p">(</span><span class="n">africa</span><span class="p">)</span><span class="o">.</span><span class="n">selfMask</span><span class="p">()</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">addLayer</span><span class="p">(</span><span class="n">cropland</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;palette&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;f096ff&#39;</span><span class="p">]},</span> <span class="s1">&#39;Cropland&#39;</span><span class="p">)</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">show_layer</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;ESA Land Cover&#39;</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="zonal-statistics">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Zonal Statistics</a><a class="headerlink" href="#zonal-statistics" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Zonal Statistics</a><a class="headerlink" href="#zonal-statistics" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">zonal_stats</span><span class="p">(</span>
     <span class="n">cropland</span><span class="p">,</span> <span class="n">africa</span><span class="p">,</span> <span class="s1">&#39;esa_cropland.csv&#39;</span><span class="p">,</span> <span class="n">statistics_type</span><span class="o">=</span><span class="s1">&#39;SUM&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1000</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">csv_to_df</span><span class="p">(</span><span class="s1">&#39;esa_cropland.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">bar_chart</span><span class="p">(</span>
     <span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">max_rows</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">x_label</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">y_label</span><span class="o">=</span><span class="s1">&#39;Area (km2)&#39;</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">pie_chart</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">max_rows</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
 <section id="esri-global-land-cover">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">ESRI GLobal Land Cover</a><a class="headerlink" href="#esri-global-land-cover" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">ESRI GLobal Land Cover</a><a class="headerlink" href="#esri-global-land-cover" title="Permalink to this heading">#</a></h2>
 <p>The ESRI GLobal Land Cover dataset is a global map of land use/land cover (LULC) derived from ESA Sentinel-2 imagery at 10m resolution. Each year is generated from Impact Observatory’s deep learning AI land classification model used a massive training dataset of billions of human-labeled image pixels developed by the National Geographic Society. The global maps were produced by applying this model to the Sentinel-2 scene collection on Microsoft’s Planetary Computer, processing over 400,000 Earth observations per year.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://livingatlas.arcgis.com/landcover/">https://livingatlas.arcgis.com/landcover/</a></p></li>
@@ -719,9 +617,7 @@ document.write(`
 <li><p><a class="reference external" href="https://samapriya.github.io/awesome-gee-community-datasets/projects/S2TSLULC/">https://samapriya.github.io/awesome-gee-community-datasets/projects/S2TSLULC/</a></p></li>
 </ul>
 <section id="using-awesome-gee-community-datasets">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Using Awesome GEE Community Datasets</a><a class="headerlink" href="#using-awesome-gee-community-datasets" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Using Awesome GEE Community Datasets</a><a class="headerlink" href="#using-awesome-gee-community-datasets" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="s1">&#39;HYBRID&#39;</span><span class="p">)</span>
 
@@ -747,58 +643,34 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="using-timeseries-inspector">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Using Timeseries Inspector</a><a class="headerlink" href="#using-timeseries-inspector" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Using Timeseries Inspector</a><a class="headerlink" href="#using-timeseries-inspector" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">images</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="p">([</span><span class="n">esri_2017</span><span class="p">,</span> <span class="n">esri_2018</span><span class="p">,</span> <span class="n">esri_2019</span><span class="p">,</span> <span class="n">esri_2020</span><span class="p">,</span> <span class="n">esri_2021</span><span class="p">])</span>
 <span class="n">collection</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">ImageCollection</span><span class="o">.</span><span class="n">fromImages</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">2022</span><span class="p">)]</span>
 <span class="n">years</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">ts_inspector</span><span class="p">(</span><span class="n">collection</span><span class="p">,</span> <span class="n">years</span><span class="p">,</span> <span class="n">esri_vis</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s1">&#39;80px&#39;</span><span class="p">)</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">add_legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;ESRI Land Cover&#39;</span><span class="p">,</span> <span class="n">builtin_legend</span><span class="o">=</span><span class="s1">&#39;ESRI_LandCover_TS&#39;</span><span class="p">)</span>
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="id1">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Extracting Croplands</a><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Extracting Croplands</a><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">FeatureCollection</span><span class="p">(</span><span class="n">geemap</span><span class="o">.</span><span class="n">examples</span><span class="o">.</span><span class="n">get_ee_path</span><span class="p">(</span><span class="s1">&#39;countries&#39;</span><span class="p">))</span>
 <span class="n">africa</span> <span class="o">=</span> <span class="n">countries</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">ee</span><span class="o">.</span><span class="n">Filter</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="s1">&#39;CONTINENT&#39;</span><span class="p">,</span> <span class="s1">&#39;Africa&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cropland_col</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">img</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">clipToCollection</span><span class="p">(</span><span class="n">africa</span><span class="p">)</span><span class="o">.</span><span class="n">selfMask</span><span class="p">())</span>
 <span class="n">cropland_ts</span> <span class="o">=</span> <span class="n">cropland_col</span><span class="o">.</span><span class="n">toBands</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">years</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
 <span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;fillColor&#39;</span><span class="p">:</span> <span class="s1">&#39;00000000&#39;</span><span class="p">}</span>
@@ -810,54 +682,30 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cropland_ts</span><span class="o">.</span><span class="n">bandNames</span><span class="p">()</span><span class="o">.</span><span class="n">getInfo</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="id2">
-<h3><a class="toc-backref" href="#id16" role="doc-backlink">Zonal Statistics</a><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Zonal Statistics</a><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">zonal_stats</span><span class="p">(</span>
     <span class="n">cropland_ts</span><span class="p">,</span> <span class="n">africa</span><span class="p">,</span> <span class="s1">&#39;esri_cropland.csv&#39;</span><span class="p">,</span> <span class="n">statistics_type</span><span class="o">=</span><span class="s1">&#39;SUM&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1000</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">csv_to_df</span><span class="p">(</span><span class="s1">&#39;esri_cropland.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">bar_chart</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">years</span><span class="p">,</span> <span class="n">max_rows</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">legend_title</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">pie_chart</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;2020&#39;</span><span class="p">,</span> <span class="n">max_rows</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="analyzing-cropland-gain-and-loss">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">Analyzing Cropland Gain and Loss</a><a class="headerlink" href="#analyzing-cropland-gain-and-loss" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Analyzing Cropland Gain and Loss</a><a class="headerlink" href="#analyzing-cropland-gain-and-loss" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="s1">&#39;HYBRID&#39;</span><span class="p">)</span>
 
@@ -875,10 +723,6 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">zonal_stats</span><span class="p">(</span>
     <span class="n">cropland_gain</span><span class="p">,</span>
     <span class="n">countries</span><span class="p">,</span>
@@ -888,18 +732,10 @@ document.write(`
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">csv_to_df</span><span class="p">(</span><span class="s1">&#39;esri_cropland_gain.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">bar_chart</span><span class="p">(</span>
     <span class="n">df</span><span class="p">,</span>
     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span>
@@ -911,19 +747,11 @@ document.write(`
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">pie_chart</span><span class="p">(</span>
     <span class="n">df</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">max_rows</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Cropland Gain&#39;</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">zonal_stats</span><span class="p">(</span>
     <span class="n">cropland_loss</span><span class="p">,</span>
     <span class="n">countries</span><span class="p">,</span>
@@ -933,18 +761,10 @@ document.write(`
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">csv_to_df</span><span class="p">(</span><span class="s1">&#39;esri_cropland_loss.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">bar_chart</span><span class="p">(</span>
     <span class="n">df</span><span class="p">,</span>
     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span>
@@ -956,30 +776,22 @@ document.write(`
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">pie_chart</span><span class="p">(</span>
     <span class="n">df</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;NAME&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">max_rows</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Cropland Loss&#39;</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 </section>
 <section id="dynamic-world-land-cover">
-<h2><a class="toc-backref" href="#id18" role="doc-backlink">Dynamic World Land Cover</a><a class="headerlink" href="#dynamic-world-land-cover" title="Permalink to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Dynamic World Land Cover</a><a class="headerlink" href="#dynamic-world-land-cover" title="Permalink to this heading">#</a></h2>
 <p>Dynamic World is a near realtime 10m resolution global land use land cover dataset, produced using deep learning, freely available and openly licensed. As a result of leveraging a novel deep learning approach, based on Sentinel-2 Top of Atmosphere, Dynamic World offers global land cover updating every 2-5 days depending on location.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.dynamicworld.app/">Dynamic World Website</a></p></li>
 <li><p><a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1">Dynamic World datasets on Earth Engine</a></p></li>
 </ul>
 <section id="classification-and-probability">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">Classification and Probability</a><a class="headerlink" href="#classification-and-probability" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Classification and Probability</a><a class="headerlink" href="#classification-and-probability" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
 <span class="n">region</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="o">.</span><span class="n">BBox</span><span class="p">(</span><span class="o">-</span><span class="mi">179</span><span class="p">,</span> <span class="o">-</span><span class="mi">89</span><span class="p">,</span> <span class="mi">179</span><span class="p">,</span> <span class="mi">89</span><span class="p">)</span>
@@ -999,13 +811,9 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="esa-land-cover-vs-dynamic-world">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink">ESA Land Cover vs. Dynamic World</a><a class="headerlink" href="#esa-land-cover-vs-dynamic-world" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">ESA Land Cover vs. Dynamic World</a><a class="headerlink" href="#esa-land-cover-vs-dynamic-world" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="mf">39.3322</span><span class="p">,</span> <span class="o">-</span><span class="mf">106.7349</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="n">left_layer</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">ee_tile_layer</span><span class="p">(</span><span class="n">esa</span><span class="p">,</span> <span class="n">esa_vis</span><span class="p">,</span> <span class="s2">&quot;ESA Land Cover&quot;</span><span class="p">)</span>
@@ -1025,13 +833,9 @@ document.write(`
 <span class="n">Map</span>
 </pre></div>
 </div>
-</div>
-</div>
 </section>
 <section id="esri-land-cover-vs-dynamic-world">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">ESRI Land Cover vs. Dynamic World</a><a class="headerlink" href="#esri-land-cover-vs-dynamic-world" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">ESRI Land Cover vs. Dynamic World</a><a class="headerlink" href="#esri-land-cover-vs-dynamic-world" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">89.3998</span><span class="p">,</span> <span class="mf">43.0886</span><span class="p">],</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="n">left_layer</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">ee_tile_layer</span><span class="p">(</span><span class="n">esri_2021</span><span class="p">,</span> <span class="n">esri_vis</span><span class="p">,</span> <span class="s2">&quot;ESRI Land Cover&quot;</span><span class="p">)</span>
@@ -1050,8 +854,6 @@ document.write(`
 
 <span class="n">Map</span>
 </pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
@@ -1120,7 +922,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blabla">blabla</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esa-wordcover">ESA WordCover</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-web-map-services">Using Web Map Services</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-earth-engine">Using Earth Engine</a></li>
