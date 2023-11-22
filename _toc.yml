@@ -4,6 +4,7 @@
 format: jb-book
 root: index
 chapters:
+  - file: book/Crop_Mapping_2022
   - file: book/markdown
   - file: book/notebooks
   - file: book/bibliography
